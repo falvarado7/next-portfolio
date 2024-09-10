@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import ThemeProvider from "./components/ThemeProvider";
 import Navbar from "./components/Navbar";
-
-const inter = Inter({ subsets: ["latin"] });
+import { GeistSans } from 'geist/font/sans'
+import { GeistMono } from 'geist/font/mono'
 
 export const metadata: Metadata = {
   title: "Francisco Alvarado",
@@ -17,11 +16,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={inter.className} >
-      <body className="bg-white dark:bg-black text-black dark:text-white">
-        
+    <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`} >
+      <body className="bg-slate-100 dark:bg-zinc-900 text-black dark:text-white">    
         <ThemeProvider >
-        <Navbar />
+          <Navbar />
           {children}
         </ThemeProvider>
       </body>

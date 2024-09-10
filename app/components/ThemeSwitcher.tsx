@@ -55,7 +55,7 @@ export default function ThemeSwitcher() {
             transition
             className={clsx(
               "w-42 absolute right-0 z-10 mt-2 max-h-60 origin-top-right overflow-auto rounded-xl p-2 text-base capitalize shadow-md focus:outline-none sm:text-sm",
-              resolvedTheme === 'dark' ? 'bg-zinc-950' : 'bg-slate-100'
+              resolvedTheme === 'dark' ? 'bg-black' : 'bg-slate-100'
             )}
           >
           {themes.map((theme) => (

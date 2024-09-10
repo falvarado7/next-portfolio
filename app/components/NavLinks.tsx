@@ -35,7 +35,7 @@ export default function NavLinks() {
         </ListboxButton>
         <ListboxOptions 
           className="w-42 absolute right-0 z-10 mt-2 max-h-60 origin-top-right overflow-auto rounded-xl p-2 text-base capitalize shadow-md focus:outline-none sm:text-sm
-          bg-slate-100 dark:bg-zinc-950"
+          bg-slate-100 dark:bg-black"
           transition
         >
         {links.map((link, index) => (

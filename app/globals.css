@@ -2,19 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    
-  }
-}
-
-
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .animate-in {
+    animation-delay: calc(var(--index) * 130ms);
   }
 }

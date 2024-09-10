@@ -6,7 +6,7 @@ export default function Navbar() {
 
   return (
     <header>
-      <nav className="flex">    
+      <nav className="flex sticky">    
         <ThemeSwitcher />
         <NavLinks />
       </nav>
