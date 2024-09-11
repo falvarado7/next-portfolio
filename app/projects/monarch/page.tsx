@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Footer from '@/app/components/Footer'
 
 function page() {
   return (
@@ -19,9 +20,9 @@ function page() {
         />
         <div className='flex flex-col'>
           Francisco
-          <div className='flex space-x-3 text-zinc-700 dark:text-slate-300'>
-            <p className=''>2024 - 2024</p>
-            <a href='https://hackathon-team2-v2-1.onrender.com/' className='underline'>
+          <div className='flex  text-zinc-700 dark:text-slate-300'>
+            <p className=''>2024 - 2024 ·</p>
+            <a href='https://hackathon-team2-v2-1.onrender.com/' className='underline ml-1'>
             Visit Project        
             </a>
           </div>       
@@ -33,9 +34,58 @@ function page() {
         <p className='text-zinc-700 dark:text-slate-300 mt-1'>
           This project was created to help aid users with no experience trading or investing their money,
           using out integrated AI. Built with ReactsJS, ExpressJS, MongoDB and featured a fully 
-          interactive graph made using D3.js
+          interactive graphs made using D3.js
         </p>
+        <Image 
+          src='/Monarch.PNG' 
+          alt='Monarch' 
+          width={400} 
+          height={200}
+          className='rounded-lg mt-8'  
+        />
       </div>
+
+      <div className='mt-10 flex-col'>
+        <h6 className='font-semibold'>Mobile First Design</h6>
+        <p className='text-zinc-700 dark:text-slate-300 mt-1'>
+          My team and I designed the mobile-first approach, ensuring that the application was
+          responsive to all platforms and viewports. 
+        </p>
+        <div className='flex justify-between mt-8'>
+          <Image 
+            src='/Monarch1.PNG' 
+            alt='Monarch-mobile1' 
+            width={100} 
+            height={400}
+            className='rounded-lg'  
+          />
+          <Image 
+            src='/Monarch2.PNG' 
+            alt='Monarch-mobile2' 
+            width={100} 
+            height={400}
+            className='rounded-lg'  
+          />
+          <Image 
+            src='/Monarch3.PNG' 
+            alt='Monarch-mobile3' 
+            width={100} 
+            height={400}
+            className='rounded-lg'  
+          />
+        </div>    
+      </div>
+
+      <div className='mt-10 flex-col'>
+        <h6 className='font-semibold'>Read More</h6>
+        <p className='text-zinc-700 dark:text-slate-300 mt-1'>
+          Here is a <a href='https://www.kye-edwards.com/case-study-monarch' className='underline text-blue-500'>blog post</a> that goes more 
+          into depth on how it was built
+        </p>  
+      </div>
+
+      <Footer />
+
     </div>
   )
 }
