@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`} >
-      <body className="bg-slate-100 dark:bg-zinc-900 text-black dark:text-white">    
+      <body className="bg-slate-100 dark:bg-zinc-900 text-black dark:text-white w-[800px] m-auto">    
         <ThemeProvider >
           <Navbar />
           {children}

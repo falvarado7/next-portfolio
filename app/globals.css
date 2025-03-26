@@ -12,3 +12,11 @@
   width: 250px;
   height: 170px;
 }
+
+.family-pic {
+  transform: rotate(-5deg);
+}
+
+.skyline {
+  transform: rotate(5deg);
+}

@@ -13,13 +13,20 @@ export default function About() {
         <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">About</h1>
         <p className="text-zinc-700 dark:text-slate-300">A glimpse into me</p>
       </div>
-      <div className="mt-10">
+      <div className="mt-10 flex">
         <Image 
           src={FamilyPic} 
           alt="family-pic" 
-          width={300}
+          width={200}
           height={3}
-          className="rounded-xl"
+          className="rounded-xl family-pic"
+        />
+        <Image 
+          src='/Houston-skyline.webp' 
+          alt="family-pic" 
+          width={240}
+          height={3}
+          className="rounded-xl z-10 -ml-20 skyline scale-50"
         />
       </div>
 
@@ -110,7 +117,7 @@ export default function About() {
                 <p className="ml-5 text-zinc-700 dark:text-slate-300">Anoplex Software</p>
               </div>    
             </div>   
-            <p className="text-zinc-700 dark:text-slate-300">2024 - </p>
+            <p className="text-zinc-700 dark:text-slate-300">2024 - Present</p>
           </div>
         </Link>
         <Link href='https://www.chegg.com/skills/thinkful-is-now-chegg-skills/'>

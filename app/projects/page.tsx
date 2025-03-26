@@ -9,10 +9,6 @@ export default function page() {
       <div className="mt-16 my-0.5">
         <h1 className="text-3xl font-bold tracking-tight">Projects</h1>
         <p className="text-zinc-700 dark:text-slate-300">Here you'll find all my custom projcts</p>
-        <div className='flex mx-6 mt-8 w-[300px]'>
-          <input type="search" placeholder='Filter by language' className='h-8 p-2 rounded-lg dark:bg-white/30'/>
-          <button className='bg-gray-300 dark:bg-white/10 p-1 rounded-lg w-20'>Filter</button>
-        </div>
         <Link href='/projects/anoplex'>
           <div className='my-10'>
             <Image src={AnoplexSoftware} alt='Anoplex' width={330} className='rounded-lg'/>
@@ -38,6 +34,7 @@ export default function page() {
             </div>           
           </div>
         </Link>
+        
       </div>
     </div>
   )

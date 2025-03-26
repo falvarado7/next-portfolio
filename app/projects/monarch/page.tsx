@@ -77,6 +77,16 @@ function page() {
       </div>
 
       <div className='mt-10 flex-col'>
+        <h6 className='font-semibold'>My Contribution</h6>
+        <p className='text-zinc-700 dark:text-slate-300 mt-1'>
+          I was responsible for developing all pages post-signup/sign-in, 
+          excluding the 'My Account' page. Additionally, I created interactive graphs using D3.js, 
+          integrating real-time data provided by our data analyst through an API. This project was 
+          built using React and Tailwind CSS.         
+        </p>      
+      </div>
+
+      <div className='mt-10 flex-col'>
         <h6 className='font-semibold'>Read More</h6>
         <p className='text-zinc-700 dark:text-slate-300 mt-1'>
           Here is a <a href='https://www.kye-edwards.com/case-study-monarch' className='underline text-blue-500'>blog post</a> that goes more 
