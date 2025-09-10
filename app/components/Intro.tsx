@@ -4,7 +4,7 @@ import { FaEnvelope } from "react-icons/fa6";
 
 function Intro() {
     return (
-        <section id="intro" className="reveal h-screen flex-col pt-52 mx-5 space-y-4">
+        <section id="intro" className="reveal h-screen flex-col pt-40 mx-5 space-y-4">
 
             <div className="md:text-3xl text-2xl font-mono text-blue-600 dark:text-blue-500">
                 <Typewriter
