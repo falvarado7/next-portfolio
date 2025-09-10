@@ -21,9 +21,9 @@ function page() {
                 </div>
                 <h1 className='mt-5 sm:mt-16 my-0.5 text-3xl font-bold'>Anoplex Software</h1>
                 <p className='my-5 text-zinc-700 dark:text-slate-300'>
-                    At Anoplex I've been responsible for building out full stack web modules at scale.
+                    At Anoplex I&apos;ve been responsible for building out full stack web modules at scale.
                     Which are used by over 150+ customers around the world in over 6 different countries for
-                    metal finishing. Here are some of the standout projects and features I've contributed to.
+                    metal finishing. Here are some of the standout projects and features I&apos;ve contributed to.
                 </p>
                 <div className='flex'>
                     <Image
@@ -47,8 +47,8 @@ function page() {
                 <div className='border border-zinc-700 rounded-md p-4 flex mt-14 text-zinc-700 md:w[500px] xs:w-[300px] mx-auto'>
                     <FaCircleInfo className='mr-2 size-20 pb-14 '/>
                     <p>
-                        The following projects are private and internal, so unfortunately I'm unable to show live demos or code specifics. However,
-                        I'll do my best to provide a high level overview of the projects and my role in them.
+                        The following projects are private and internal, so unfortunately I&apos;m unable to show live demos or code specifics. However,
+                        I&apos;ll do my best to provide a high level overview of the projects and my role in them.
                     </p>
                 </div>
 
@@ -95,7 +95,7 @@ function page() {
                         This can be a complex and time-consuming process, but TestTrak automates much of it, from recording
                         chamber parameters to managing the loading and unloading of test panels. The software also helps
                         users track and document corrosion test results, including automatically calculating load times and
-                        alerting users when it's time to unload chambers. It supports up to four chambers and allows for
+                        alerting users when it&apos;s time to unload chambers. It supports up to four chambers and allows for
                         the customization of specifications for different chamber types.
                     <br/>
                     <br/>
@@ -108,13 +108,13 @@ function page() {
                     <h6 className='font-semibold'>My Contribution</h6>
                     <p className='text-zinc-700 dark:text-slate-300 mt-1'>
                         The TestTrak program, initially available solely as a local Windows download, has undergone a
-                        transformative upgrade under my guidance. My mission was to seamlessly transition TestTrak to Anoplex's
+                        transformative upgrade under my guidance. My mission was to seamlessly transition TestTrak to Anoplex&apos;s
                         robust cloud based system, ensuring that users can access it effortlessly from any device, anywhere with
                         an internet connection. To achieve this, I employed ReactJS to create a dynamic and responsive frontend,
                         while harnessing the power of Laravel for a secure and efficient backend. To bridge these two technology
                         stacks, I utilized InertiaJS, which facilitated smooth communication and interaction between them. This
                         innovative integration not only enhances user experience but also paves the way for future updates and scalability,
-                        aligning with Anoplex's vision of accessible and cutting edge software solutions.
+                        aligning with Anoplex&apos;s vision of accessible and cutting edge software solutions.
                     </p>
                 </div>
             </div>

@@ -7,6 +7,9 @@ import { FaGithub } from 'react-icons/fa6'
 import { RxExternalLink } from 'react-icons/rx'
 
 function Projects() {
+    
+    const router = useRouter();
+
     return (
         <section id="projects" className="reveal mx-5 mt-40">
             <h1 className="text-4xl font-bold">Projects</h1>
@@ -16,7 +19,6 @@ function Projects() {
             </div>
             <div className="stagger grid-stagger pt-14 grid gap-5 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 " style={{ ["--stagger-step" as any]: "400ms" }}>
                 {PROJECTS.map((project) => {
-                    const router = useRouter()
                     return (
                         <div key={project.id}
                             onClick={() => router.push(`/projects/${project.id}`)}

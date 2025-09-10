@@ -16,10 +16,10 @@ function About() {
                 {/* Left column: text + languages = same width */}
                 <div>
                 <p className="text-zinc-700 dark:text-slate-300 pr-2">
-                    I'm currently a <span className="font-semibold dark:text-white text-black">Full Stack
+                    I&apos;m currently a <span className="font-semibold dark:text-white text-black">Full Stack
                     Software Engineer</span> at <span className="font-semibold text-blue-600 dark:text-blue-500">Anoplex
                     Software</span>,
-                    where I've heped modernize legacy systems into scalable, cloud-based modules used by
+                    where I&apos;ve heped modernize legacy systems into scalable, cloud-based modules used by
                     over 150+ international clients. My work spans both front-end and back-end
                     development, with a strong focus on creating clean, intuitive interfaces and reliable,
                     efficient systems.

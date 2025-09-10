@@ -26,8 +26,8 @@ function Intro() {
             </div>
             <h1 className="md:text-5xl text-3xl font-semibold tracking-tight">hey, Francisco here!</h1>
             <p className="md:text-lg text-zinc-700 dark:text-slate-300">
-                I'm a Houston based full-stack software engineer with experience in React, PHP, Laravel.
-                I've built web apps used by 150+ international clients,
+                I&apos;m a Houston based full-stack software engineer with experience in React, PHP, Laravel.
+                I&apos;ve built web apps used by 150+ international clients,
                 and I bring a unique edge with my oil & gas industry background.
                 I focus on delivering clean UI, efficient systems, and scalable solutions.
             </p>
