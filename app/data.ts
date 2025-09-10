@@ -63,7 +63,7 @@ export type projects = {
     tech: string[];
     link?: string;
     github?: string;
-    image?: string | StaticImageData;
+    image: string | StaticImageData;
 }
 
 export const PROJECTS: projects[] = [
