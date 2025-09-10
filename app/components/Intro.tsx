@@ -31,7 +31,7 @@ function Intro() {
                 and I bring a unique edge with my oil & gas industry background.
                 I focus on delivering clean UI, efficient systems, and scalable solutions.
             </p>
-            <div className="justify-self-center pt-5">
+            <div className="flex justify-center pt-5">
                 <a className="
                         inline-flex items-center gap-2
                         border border-zinc-900 dark:border-slate-100
