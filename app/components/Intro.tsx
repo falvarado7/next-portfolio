@@ -1,6 +1,6 @@
 import React from 'react'
 import { Typewriter } from "react-simple-typewriter";
-import { FaEnvelope, FaGithub } from "react-icons/fa6";
+import { FaEnvelope } from "react-icons/fa6";
 
 function Intro() {
     return (
@@ -33,17 +33,17 @@ function Intro() {
             </p>
             <div className="justify-self-center pt-5">
                 <a className="
-                    border border-zinc-900 dark:border-slate-100
-                    hover:border-blue-600 hover:text-blue-600
-                    dark:hover:border-blue-500 dark:hover:text-blue-500
-                    rounded-md flex
-                    px-2 py-2 text-base
-                    sm:px-3 sm:py-2 sm:text-lg
-                    md:px-4 md:py-3 md:text-xl
+                        inline-flex items-center gap-2
+                        border border-zinc-900 dark:border-slate-100
+                        hover:border-blue-600 hover:text-blue-600
+                        dark:hover:border-blue-500 dark:hover:text-blue-500
+                        rounded-md px-2 py-2 text-base
+                        sm:px-3 sm:py-2 sm:text-lg
+                        md:px-4 md:py-3 md:text-xl
                     "
                     href="mailto:francisco.alvarado217@yahoo.com?subject=Let's Work Together!"
                 >
-                    <FaEnvelope className="mt-1 mx-2"/>
+                    <FaEnvelope className="mx-2"/>
                     Lets Connect
                 </a>
             </div>

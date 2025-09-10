@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import Footer from '@/app/components/Footer'
 import { RiArrowGoBackFill } from 'react-icons/ri'
 import FadeInItem from '@/app/components/FadeInItem'
 import { RxExternalLink } from 'react-icons/rx'

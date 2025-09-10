@@ -36,7 +36,7 @@ function About() {
                     Here are some of the technologies I have been working with:
                 </p>
 
-                {/* OPTION A: fixed columns (even widths within the text column) */}
+                {/* fixed columns (even widths within the text column) */}
                 <ul
                     className="
                     mt-3 grid gap-x-6 gap-y-2
@@ -68,8 +68,6 @@ function About() {
                 className="rounded-xl hidden md:block justify-self-end"
                 />
             </div>
-
-
         </section>
     )
 }

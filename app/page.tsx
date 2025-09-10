@@ -27,7 +27,7 @@ export default function Home() {
                 });
                 });
 
-                // Keep observing if you want re-animate on re-entry; otherwise unobserve:
+                // Keep observing if want re-animate on re-entry; otherwise unobserve:
                 // io.unobserve(section);
             });
             },

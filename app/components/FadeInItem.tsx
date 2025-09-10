@@ -3,9 +3,9 @@ import React from 'react'
 
 function FadeInItem({
     children,
-    delay = 0,           // ms
-    once = true,         // reveal only first time it enters
-    margin = "0px 0px -15% 0px", // trigger as it comes up from bottom
+    delay = 0,
+    once = true,
+    margin = "0px 0px -15% 0px",
 }: {
     children: React.ReactNode;
     delay?: number;

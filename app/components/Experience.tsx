@@ -8,7 +8,7 @@ function Experience() {
     const current = EXPERIENCES.find(e => e.id === active)!;
 
     const activeIdx = EXPERIENCES.findIndex((e) => e.id === active);
-    const ROW_H = 40; // matches h-10 (10 * 4px)
+    const ROW_H = 40;
 
     return (
         <section id="experience" className="reveal mx-5 mt-40">
@@ -44,7 +44,7 @@ function Experience() {
                             );
                         })}
                     </ul>
-                    {/* Optional legend under numbers */}
+                    {/* legend under numbers */}
                     <div className="mt-2 text-blue-600 dark:text-blue-500">
                         {EXPERIENCES.map((exp, idx) =>
                         exp.id === active ? <span key={exp.id}>{idx + 1}. {exp.company}</span> : null
@@ -58,13 +58,13 @@ function Experience() {
                     <div className="relative pr-4">
                         {/* Sliding indicator on the right */}
                         <span
-                        aria-hidden
-                        className="absolute right-0 top-0 w-[2px] rounded bg-blue-600 dark:bg-blue-500
-                                    transition-transform duration-300"
-                        style={{
-                            height: `${ROW_H}px`,
-                            transform: `translateY(${activeIdx * ROW_H}px)`,
-                        }}
+                            aria-hidden
+                            className="absolute right-0 top-0 w-[2px] rounded bg-blue-600 dark:bg-blue-500
+                                        transition-transform duration-300"
+                            style={{
+                                height: `${ROW_H}px`,
+                                transform: `translateY(${activeIdx * ROW_H}px)`,
+                            }}
                         />
 
                         <ul className="flex flex-col">
@@ -76,11 +76,11 @@ function Experience() {
                                 onClick={() => setActive(exp.id)}
                                 aria-pressed={selected}
                                 className={[
-                                    "relative overflow-hidden",               // clip ripple
+                                    "relative overflow-hidden",
                                     "flex items-center gap-3 px-3 text-left w-full",
                                     "h-10 rounded-md transition-colors duration-200",
                                     selected
-                                    ? "text-blue-600 dark:text-blue-500"    // no hard bg
+                                    ? "text-blue-600 dark:text-blue-500"
                                     : ""
                                 ].join(" ")}
                                 >
