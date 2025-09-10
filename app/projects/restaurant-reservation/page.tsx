@@ -8,7 +8,7 @@ import { FaGithub } from 'react-icons/fa6'
 
 function page() {
     return (
-        <FadeInItem delay={160}>
+        <FadeInItem>
             <div className='ml-5 mr-5 mb-3'>
                 <div className="sm:hidden mt-5">
                     <a
@@ -36,7 +36,7 @@ function page() {
                         <div className='flex  text-zinc-700 dark:text-slate-300'>
                             <p className=''>2024 - 2024 ·</p>
                             <a
-                                href="https://hackathon-team2-v2-1.onrender.com/"
+                                href="https://restaurant-reservation-project-1.onrender.com"
                                 target="_blank"
                                 className="flex items-center gap-1 ml-2 hover:text-blue-600 dark:hover:text-blue-500"
                             >
@@ -45,7 +45,7 @@ function page() {
                             </a>
 
                             <a
-                                href="https://github.com/falvarado7/Hackathon-Project"
+                                href="https://github.com/falvarado7/Restaurant-Reservation-Project"
                                 target="_blank"
                                 className="flex items-center gap-1 ml-2 hover:text-blue-600 dark:hover:text-blue-500"
                             >

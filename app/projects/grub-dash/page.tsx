@@ -36,7 +36,7 @@ function page() {
                         <div className='flex  text-zinc-700 dark:text-slate-300'>
                             <p className=''>2024 - 2024 ·</p>
                             <a
-                                href="https://hackathon-team2-v2-1.onrender.com/"
+                                href="https://grubdash-frontend-6dq9.onrender.com/"
                                 target="_blank"
                                 className="flex items-center gap-1 ml-2 hover:text-blue-600 dark:hover:text-blue-500"
                             >
@@ -45,7 +45,7 @@ function page() {
                             </a>
 
                             <a
-                                href="https://github.com/falvarado7/Hackathon-Project"
+                                href="https://github.com/falvarado7/GrubDash-BackEnd-Project"
                                 target="_blank"
                                 className="flex items-center gap-1 ml-2 hover:text-blue-600 dark:hover:text-blue-500"
                             >

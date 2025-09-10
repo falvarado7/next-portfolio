@@ -27,68 +27,58 @@ export default function ThemeSwitcher() {
     { name: 'Light', value: 'light', icon: 'FiSun'},
     { name: 'Dark', value: 'dark', icon: 'FiMoon'},
   ]
-  
-  return (
-    <div className='flex items-center justify-between w-full'>
-      <Link href='/'>
-        <Image
-          src={resolvedTheme === 'dark' ? DarkLogo : LightLogo}
-          alt="Logo"
-          width={50}
-          height={50}
-        />
-      </Link>
-      <div>
-      <Listbox value={theme} onChange={(value) => setTheme(value)}>
-        <div className='relative'>
-          <ListboxButton className={clsx(
-            'relative flex h-8 w-8 cursor-default items-center justify-center rounded-lg'          
-            )}>
-            {resolvedTheme === 'dark' ? (
-              <FiMoon className='text-white w-6 h-6 cursor-pointer' />
-            
-            ) : (
-              <FiSun className='text-black w-6 h-6 cursor-pointer' />
-            )}  
-          </ListboxButton>
-          <ListboxOptions
-            transition
-            className={clsx(
-              "w-42 absolute right-0 z-10 mt-2 max-h-60 origin-top-right overflow-auto rounded-xl p-2 text-base capitalize shadow-md focus:outline-none sm:text-sm",
-              resolvedTheme === 'dark' ? 'bg-black' : 'bg-slate-100'
-            )}
-          >
-          {themes.map((theme) => (
-              <ListboxOption
-                key={theme.value}
-                value={theme.value}
-                className="relative cursor-default select-none rounded-md py-2 pl-10 pr-4 data-[focus]:bg-gray-300 dark:data-[focus]:bg-white/10"
-              >
-                {({ selected }) => (                
-                  <div className=''>                
-                    <span
-                      className={`block truncate ${
-                        selected ? "font-medium" : "font-normal"
-                      }`}
+
+    return (
+        <div>
+            <Listbox value={theme} onChange={(value) => setTheme(value)}>
+                <div className='relative'>
+                <ListboxButton className={clsx(
+                    'relative flex h-8 w-8 cursor-default items-center justify-center rounded-lg'
+                    )}>
+                    {resolvedTheme === 'dark' ? (
+                    <FiMoon className='text-white w-5 h-5 cursor-pointer hover:text-blue-500' />
+
+                    ) : (
+                    <FiSun className='text-black w-5 h-5 cursor-pointer hover:text-blue-500' />
+                    )}
+                </ListboxButton>
+                <ListboxOptions
+                    transition
+                    className={clsx(
+                    "w-42 absolute right-0 z-10 mt-2 max-h-60 origin-top-right overflow-auto rounded-xl p-2 text-base capitalize shadow-md focus:outline-none sm:text-sm",
+                    resolvedTheme === 'dark' ? 'bg-black' : 'bg-slate-100'
+                    )}
+                >
+                {themes.map((theme) => (
+                    <ListboxOption
+                        key={theme.value}
+                        value={theme.value}
+                        className="relative cursor-default select-none rounded-md py-2 pl-10 pr-4 data-[focus]:bg-gray-300 dark:data-[focus]:bg-zinc-800"
                     >
-                      {theme.name}
-                    </span>
-                    {selected ? (
-                      <span className="absolute inset-y-0 left-0 flex items-center pl-3 dark:text-neutral-50">
-                        <FaCheck
-                          className="h-5 w-5"
-                          aria-hidden="true"
-                        />
-                      </span>
-                    ) : null}
-                  </div>             
-                )}
-              </ListboxOption>
-            ))}
-          </ListboxOptions>
-        </div>        
-      </Listbox>
-      </div>
-    </div>
-  );
+                        {({ selected }) => (
+                        <div className=''>
+                            <span
+                            className={`block truncate ${
+                                selected ? "font-medium" : "font-normal"
+                            }`}
+                            >
+                            {theme.name}
+                            </span>
+                            {selected ? (
+                            <span className="absolute inset-y-0 left-0 flex items-center pl-3 dark:text-neutral-50">
+                                <FaCheck
+                                className="h-5 w-5"
+                                aria-hidden="true"
+                                />
+                            </span>
+                            ) : null}
+                        </div>
+                        )}
+                    </ListboxOption>
+                    ))}
+                </ListboxOptions>
+                </div>
+            </Listbox>
+        </div>
+    );
 }
