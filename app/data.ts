@@ -100,7 +100,7 @@ export const PROJECTS: projects[] = [
         tech: ["React", "Python (FastAPI)"],
         link: "https://welovemovies-frontend.netlify.app/",
         github: "https://github.com/falvarado7/movie-app",
-        image: "/We-Love-Movies.PNG"
+        image: "/WeLoveMovies.PNG"
     },
     {
         id: "grub-dash",
