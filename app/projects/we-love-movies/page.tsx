@@ -39,7 +39,7 @@ function page() {
                             Frontend UI that is responsive and polished with modern styling.
                         </li>
                         <li>
-                            Search and CRUD functionality beyond simple "list and detail" views.
+                            Search and CRUD functionality beyond simple &quot;list and detail&quot; views.
                         </li>
                         <li>
                             Deployment of both frontend and backend to production (Netlify + Fly.io).
