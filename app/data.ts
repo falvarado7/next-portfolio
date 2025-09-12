@@ -97,7 +97,7 @@ export const PROJECTS: projects[] = [
         id: "we-love-movies",
         title: "We Love Movies",
         description: "Movie discovery platform with CRUD functionality for films, reviews, and theaters",
-        tech: ["React", "Python (FastAPI)"],
+        tech: ["React", "Python (FastAPI)", "Docker"],
         link: "https://welovemovies-frontend.netlify.app/",
         github: "https://github.com/falvarado7/movie-app",
         image: "/WeLoveMovies.png"
