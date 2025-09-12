@@ -64,7 +64,7 @@ function page() {
                         <li>React + React Router for dynamic navigation between Movies and Theaters.</li>
                         <li>Dark Mode toggle using Tailwinds dark mode classes for a modern theme.</li>
                         <li>Responsive Layout: collapses navigation on small screens; desktop shows full nav + search.</li>
-                        <li>Search Bar: filters movie titles instantly (e.g., typing “Up” only shows relevant movies).</li>
+                        <li>Search Bar: filters movie titles instantly (e.g., typing &quot;Up&quot; only shows relevant movies).</li>
                         <li>CRUD Reviews: create, update, and delete reviews inline with API integration.</li>
                     </ul>
 
