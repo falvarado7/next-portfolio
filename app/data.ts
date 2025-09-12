@@ -97,10 +97,10 @@ export const PROJECTS: projects[] = [
         id: "we-love-movies",
         title: "We Love Movies",
         description: "Movie discovery platform with CRUD functionality for films, reviews, and theaters",
-        tech: ["React", "Node.js (Express.js)", "PostgreSQL"],
-        link: "https://welovemovies-frontend-ekzi.onrender.com/",
-        github: "https://github.com/falvarado7/WeLoveMovies-Backend_Project",
-        image: "/WeLoveMovies.PNG"
+        tech: ["React", "Python (FastAPI)"],
+        link: "https://welovemovies-frontend.netlify.app/",
+        github: "https://github.com/falvarado7/movie-app",
+        image: "/We-Love-Movies.PNG"
     },
     {
         id: "grub-dash",
