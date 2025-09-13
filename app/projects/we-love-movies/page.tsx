@@ -134,7 +134,7 @@ function page() {
                     <h6 className='font-semibold'>GitHub Repo</h6>
                     <p className='text-zinc-700 dark:text-slate-300 mt-1 flex items-center'>
                         <FaRegFolderOpen className='mr-2'/>
-                        <a href='https://https://github.com/falvarado7/movie-app'
+                        <a href='https://github.com/falvarado7/movie-app'
                             className='underline hover:text-blue-600 dark:hover:text-blue-500'
                             target='_blank'>
                             movie-app (Frontend + Backend)
