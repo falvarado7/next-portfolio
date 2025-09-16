@@ -106,9 +106,9 @@ export const PROJECTS: projects[] = [
         id: "grub-dash",
         title: "Grub Dash",
         description: "Food delivery simulation app with restaurant, order, and driver workflows",
-        tech: ["React", "Node.js (Express.js)", "PostgreSQL"],
-        link: "https://grubdash-frontend-6dq9.onrender.com/",
-        github: "https://github.com/falvarado7/GrubDash-BackEnd-Project",
-        image: "/GrubDash.PNG"
+        tech: ["React", "TypeScript", "C# (.NET 9)", "PostgreSQL", "Docker", "EF Core"],
+        link: "https://grubdash-alpha.vercel.app/",
+        github: "https://github.com/falvarado7/grubdash",
+        image: "/grubdash/GrubDash-Home-Light.png"
     },
 ]

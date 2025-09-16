@@ -1,10 +1,8 @@
 import React from 'react'
-import Image from 'next/image'
-import Footer from '@/app/components/Footer'
 import { RiArrowGoBackFill } from 'react-icons/ri'
 import FadeInItem from '@/app/components/FadeInItem'
-import { RxExternalLink } from 'react-icons/rx'
-import { FaGithub } from 'react-icons/fa6'
+import { FaLink, FaRegFolderOpen } from 'react-icons/fa6'
+import ScreenshotGallery from '@/app/components/ScreenshotGallery'
 
 function page() {
     return (
@@ -18,106 +16,142 @@ function page() {
                         <RiArrowGoBackFill className='border rounded-full size-6 p-1 hover:text-blue-500 hover:border-blue-500'/>
                     </a>
                 </div>
-                <h1 className='mt-16 my-0.5 text-3xl font-bold'>Monarch</h1>
+                <h1 className='mt-16 my-0.5 text-3xl font-bold'>GrubDash</h1>
                 <p className='my-5 text-zinc-700 dark:text-slate-300'>
-                    Investment trading platform that allows users to invest their money with no experience,
-                    aided by integrated AI
+                    GrubDash is a full-stack web application for browsing dishes, placing orders, and managing menus.
+                    I designed and developed it from scratch to demonstrate a production-ready SaaS workflow,
+                    featuring a cloud database, modern frontend, and deployed backend API.
                 </p>
-                <div className='flex'>
-                    <Image
-                        src="/IMG_5223.JPG"
-                        alt='francisco img'
-                        width={70}
-                        height={30}
-                        className='rounded-full mr-2'
-                    />
-                    <div className='flex flex-col'>
-                        Francisco
-                        <div className='flex  text-zinc-700 dark:text-slate-300'>
-                            <p className=''>2024 - 2024 ·</p>
-                            <a
-                                href="https://grubdash-frontend-6dq9.onrender.com/"
-                                target="_blank"
-                                className="flex items-center gap-1 ml-2 hover:text-blue-600 dark:hover:text-blue-500"
-                            >
-                                <RxExternalLink className="w-4 h-4" />
-                                <span className="font-medium">Visit Link</span>
-                            </a>
-
-                            <a
-                                href="https://github.com/falvarado7/GrubDash-BackEnd-Project"
-                                target="_blank"
-                                className="flex items-center gap-1 ml-2 hover:text-blue-600 dark:hover:text-blue-500"
-                            >
-                                <FaGithub className="w-4 h-4" />
-                                <span className="font-medium">View Repo</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
+                <ScreenshotGallery screenshots={[
+                    {src: '/grubdash/GrubDash-Home-Light.png', alt: 'GrubDash'}
+                ]}/>
                 <div className='mt-10 flex-col'>
-                    <h6 className='font-semibold'>About the Project</h6>
+                    <h6 className='font-semibold'>The Challenge</h6>
                     <p className='text-zinc-700 dark:text-slate-300 mt-1'>
-                        This project was created to help aid users with no experience trading or investing their money,
-                        using out integrated AI. Built with ReactsJS, ExpressJS, MongoDB and featured a fully
-                        interactive graphs made using D3.js
+                        Many food-ordering applications focus on frontend-only prototypes or lack real deployments. I wanted to create a system that:
                     </p>
-                    <Image
-                        src='/Monarch.PNG'
-                        alt='Monarch'
-                        width={400}
-                        height={200}
-                        className='rounded-lg mt-8'
+                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-2">
+                        <li>
+                            Runs on a scalable backend with persistent cloud storage.
+                        </li>
+                        <li>
+                            Provides a modern, responsive UI suitable for both mobile and desktop.
+                        </li>
+                        <li>
+                            Is fully deployed so anyone can interact with the live demo as if it were a real SaaS product.
+                        </li>
+                    </ul>
+                    <ScreenshotGallery
+                        screenshots={[
+                            { src: "/grubdash/GrubDash-Home-Dark.png", alt: "Dark mode home" },
+                            { src: "/grubdash/DishDetail-Light.png", alt: "Light mode dish detail" },
+                            { src: "/grubdash/DishDetail-Dark.png", alt: "Dark mode dish detail" },
+                        ]}
                     />
                 </div>
 
                 <div className='mt-10 flex-col'>
-                    <h6 className='font-semibold'>Mobile First Design</h6>
+                    <h5 className='font-semibold'>The Solution</h5>
+
                     <p className='text-zinc-700 dark:text-slate-300 mt-1'>
-                    My team and I designed the mobile-first approach, ensuring that the application was
-                    responsive to all platforms and viewports.
+                        Frontend
                     </p>
-                    <div className='flex justify-between mt-8'>
-                    <Image
-                        src='/Monarch1.PNG'
-                        alt='Monarch-mobile1'
-                        width={100}
-                        height={400}
-                        className='rounded-lg'
+                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-2 space-y-1">
+                        <li>State management via React Query for async data and caching.</li>
+                        <li>Components include: dish cards, modals, and a sidebar cart with live totals.</li>
+                        <li>Admin dashboard with CRUD for dishes and order management.</li>
+                        <li>TailwindCSS: responsive, utility-first design with light/dark themes.</li>
+                        <li>React + Vite + TypeScript: fast, type-safe client.</li>
+                    </ul>
+
+                    <p className='text-zinc-700 dark:text-slate-300 mt-5'>
+                        Backend
+                    </p>
+                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-2 space-y-1">
+                        <li>ASP.NET Core Web API for REST endpoints.</li>
+                        <li>Entity Framework Core with migrations for schema management.</li>
+                        <li>PostgreSQL (Neon) as the database.</li>
+                        <li>Automatic migrations on startup ensure smooth deploys.</li>
+                        <li>Configurable CORS + JSON options for clean API consumption.</li>
+                    </ul>
+
+                    <p className='text-zinc-700 dark:text-slate-300 mt-5'>
+                        Deployment
+                    </p>
+                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-2 space-y-1">
+                        <li>API hosted on Fly.io (Dockerized, SSL, automatic scaling).</li>
+                        <li>Frontend hosted on Vercel with environment-based config for API URL.</li>
+                        <li>Health checks + logging ensure visibility into app uptime.</li>
+                    </ul>
+
+                    <ScreenshotGallery
+                        screenshots={[
+                            { src: "/grubdash/Cart-Light.png", alt: "Cart light mode" },
+                            { src: "/grubdash/Dashboard-dark.png", alt: "Dark mode dashboard" },
+                            { src: "/grubdash/EditOrder-Light.png", alt: "Light mode edir order" },
+                        ]}
                     />
-                    <Image
-                        src='/Monarch2.PNG'
-                        alt='Monarch-mobile2'
-                        width={100}
-                        height={400}
-                        className='rounded-lg'
-                    />
-                    <Image
-                        src='/Monarch3.PNG'
-                        alt='Monarch-mobile3'
-                        width={100}
-                        height={400}
-                        className='rounded-lg'
-                    />
-                    </div>
                 </div>
 
                 <div className='mt-10 flex-col'>
-                    <h6 className='font-semibold'>My Contribution</h6>
-                    <p className='text-zinc-700 dark:text-slate-300 mt-1'>
-                    I was responsible for developing all pages post-signup/sign-in,
-                    excluding the My Account page. Additionally, I created interactive graphs using D3.js,
-                    integrating real-time data provided by our data analyst through an API. This project was
-                    built using React and Tailwind CSS.
+                    <h6 className='font-semibold'>Lessons Learned</h6>
+                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-2 space-y-1">
+                        <li>Database role mismatches: Fixed connection issues by configuring Neon/Postgres roles and ports consistently.</li>
+                        <li>SPA routing on Vercel: Handled /dashboard refresh 404s with fallback rewrites.</li>
+                        <li>Frontend/backend integration: Used environment variables for seamless local vs production API switching.</li>
+                    </ul>
+                    <ScreenshotGallery
+                        screenshots={[
+                            { src: "/grubdash/EditDish-Dark.png", alt: "Dark mode edit dish" },
+                            { src: "/grubdash/Dashboard-Light.png", alt: "Light mode dashboard" },
+                            { src: "/grubdash/Cart-Dark.png", alt: "Cart dark mode" },
+                        ]}
+                    />
+                </div>
+
+                <div className='mt-10 flex-col'>
+                    <h6 className='font-semibold'>Tech Stack</h6>
+                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-2 space-y-1">
+                        <li>Frontend: React, Vite, TypeScript, TailwindCSS, React Query</li>
+                        <li>Backend: .NET 9 (C#), EF Core, PostgreSQL</li>
+                        <li>DevOps: Fly.io, Vercel, Docker, Neon (DB hosting)</li>
+                    </ul>
+                    <ScreenshotGallery
+                        screenshots={[
+                            { src: "/grubdash/EditOrder-Dark.png", alt: "Dark mode edit order" },
+                            { src: "/grubdash/EditDish-Light.png", alt: "Light mode edit dish" },
+                        ]}
+                    />
+                </div>
+
+                <div className='mt-10 flex-col'>
+                    <h6 className='font-semibold'>Live Demo</h6>
+                    <p className='text-zinc-700 dark:text-slate-300 mt-1 flex items-center'>
+                        <FaLink className='mr-2'/>
+                        Frontend: <a href='https://grubdash-alpha.vercel.app/'
+                                    className='underline ml-1 hover:text-blue-600 dark:hover:text-blue-500'
+                                    target='_blank'>
+                                    grubdash-alpha.vercel.app/
+                                </a>
+                    </p>
+                    <p className='text-zinc-700 dark:text-slate-300 mt-1 flex items-center'>
+                        <FaLink className='mr-2'/>
+                        Backend: <a href='https://grubdash-api.fly.dev/dishes'
+                                    className='underline ml-1 hover:text-blue-600 dark:hover:text-blue-500'
+                                    target='_blank'>
+                                    grubdash-api.fly.dev/dishes
+                                </a>
                     </p>
                 </div>
-
-                <div className='mt-10 flex-col'>
-                    <h6 className='font-semibold'>Read More</h6>
-                    <p className='text-zinc-700 dark:text-slate-300 mt-1'>
-                        Here is a <a href='https://www.kye-edwards.com/case-study-monarch' className='underline text-blue-500'>blog post</a> that goes more
-                        into depth on how it was built
+                <div className='mt-5 flex-col'>
+                    <h6 className='font-semibold'>GitHub Repo</h6>
+                    <p className='text-zinc-700 dark:text-slate-300 mt-1 flex items-center'>
+                        <FaRegFolderOpen className='mr-2'/>
+                        <a href='https://github.com/falvarado7/grubdash'
+                            className='underline hover:text-blue-600 dark:hover:text-blue-500'
+                            target='_blank'>
+                            grubdash (Frontend + Backend)
+                        </a>
                     </p>
                 </div>
             </div>
