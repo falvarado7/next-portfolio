@@ -29,9 +29,9 @@ function page() {
                 <div className='mt-10 flex-col'>
                     <h6 className='font-semibold'>The Challenge</h6>
                     <p className='text-zinc-700 dark:text-slate-300 mt-1'>
-                        Most bootcamp-style projects are either frontend-only or backend-only. I wanted to showcase a project that felt like a production-ready app with:
+                        Most movie-style projects are either frontend-only or backend-only. I wanted to showcase a project that felt like a production-ready app with:
                     </p>
-                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-2">
+                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-1 space-y-1">
                         <li>
                             Backend API to manage movies, theaters, and reviews.
                         </li>
@@ -57,10 +57,10 @@ function page() {
                 <div className='mt-10 flex-col'>
                     <h5 className='font-semibold'>The Solution</h5>
 
-                    <p className='text-zinc-700 dark:text-slate-300 mt-1'>
+                    <p className='text-zinc-700 dark:text-slate-300 mt-1 font-semibold'>
                         Frontend (React + Vite + Tailwind)
                     </p>
-                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-2 space-y-1">
+                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-1 space-y-1">
                         <li>React + React Router for dynamic navigation between Movies and Theaters.</li>
                         <li>Dark Mode toggle using Tailwinds dark mode classes for a modern theme.</li>
                         <li>Responsive Layout: collapses navigation on small screens; desktop shows full nav + search.</li>
@@ -68,19 +68,19 @@ function page() {
                         <li>CRUD Reviews: create, update, and delete reviews inline with API integration.</li>
                     </ul>
 
-                    <p className='text-zinc-700 dark:text-slate-300 mt-5'>
+                    <p className='text-zinc-700 dark:text-slate-300 mt-2 font-semibold'>
                         Backend (FastAPI + PostgreSQL)
                     </p>
-                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-2 space-y-1">
+                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-1 space-y-1">
                         <li>FastAPI provides endpoints for /movies, /theaters, and /reviews.</li>
                         <li>Seeded Database so that the app always has realistic test data when deployed.</li>
                         <li>Robust RESTful Design: Endpoints support listing, searching, and full CRUD for reviews.</li>
                     </ul>
 
-                    <p className='text-zinc-700 dark:text-slate-300 mt-5'>
+                    <p className='text-zinc-700 dark:text-slate-300 mt-2 font-semibold'>
                         Deployment
                     </p>
-                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-2 space-y-1">
+                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-1 space-y-1">
                         <li>Frontend: Deployed on Netlify, using environment variables (VITE_API_URL) to connect to the backend.</li>
                         <li>Backend: Deployed on Fly.io with Docker + Uvicorn, exposing an API at /api/*.</li>
                         <li>CI/CD: Eventually added a manual deploy script for full control of production releases.</li>
@@ -96,7 +96,7 @@ function page() {
 
                 <div className='mt-10 flex-col'>
                     <h6 className='font-semibold'>Lessons Learned</h6>
-                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-2 space-y-1">
+                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-1 space-y-1">
                         <li>Managing dark mode with Tailwind and React taught me how to design a consistent theme system.</li>
                         <li>Handling search state and query params showed me how to sync frontend navigation with backend filtering.</li>
                         <li>Deploying a FastAPI backend on Fly.io gave me real-world experience with Docker, ports, and production health checks.</li>

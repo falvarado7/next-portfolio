@@ -30,7 +30,7 @@ function page() {
                     <p className='text-zinc-700 dark:text-slate-300 mt-1'>
                         Many food-ordering applications focus on frontend-only prototypes or lack real deployments. I wanted to create a system that:
                     </p>
-                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-2">
+                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-1 space-y-1">
                         <li>
                             Runs on a scalable backend with persistent cloud storage.
                         </li>
@@ -53,10 +53,10 @@ function page() {
                 <div className='mt-10 flex-col'>
                     <h5 className='font-semibold'>The Solution</h5>
 
-                    <p className='text-zinc-700 dark:text-slate-300 mt-1'>
+                    <p className='text-zinc-700 dark:text-slate-300 mt-1 font-semibold'>
                         Frontend
                     </p>
-                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-2 space-y-1">
+                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-1 space-y-1">
                         <li>State management via React Query for async data and caching.</li>
                         <li>Components include: dish cards, modals, and a sidebar cart with live totals.</li>
                         <li>Admin dashboard with CRUD for dishes and order management.</li>
@@ -64,10 +64,10 @@ function page() {
                         <li>React + Vite + TypeScript: fast, type-safe client.</li>
                     </ul>
 
-                    <p className='text-zinc-700 dark:text-slate-300 mt-5'>
+                    <p className='text-zinc-700 dark:text-slate-300 mt-2 font-semibold'>
                         Backend
                     </p>
-                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-2 space-y-1">
+                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-1 space-y-1">
                         <li>ASP.NET Core Web API for REST endpoints.</li>
                         <li>Entity Framework Core with migrations for schema management.</li>
                         <li>PostgreSQL (Neon) as the database.</li>
@@ -75,10 +75,10 @@ function page() {
                         <li>Configurable CORS + JSON options for clean API consumption.</li>
                     </ul>
 
-                    <p className='text-zinc-700 dark:text-slate-300 mt-5'>
+                    <p className='text-zinc-700 dark:text-slate-300 mt-2 font-semibold'>
                         Deployment
                     </p>
-                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-2 space-y-1">
+                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-1 space-y-1">
                         <li>API hosted on Fly.io (Dockerized, SSL, automatic scaling).</li>
                         <li>Frontend hosted on Vercel with environment-based config for API URL.</li>
                         <li>Health checks + logging ensure visibility into app uptime.</li>
@@ -95,7 +95,7 @@ function page() {
 
                 <div className='mt-10 flex-col'>
                     <h6 className='font-semibold'>Lessons Learned</h6>
-                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-2 space-y-1">
+                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-1 space-y-1">
                         <li>Database role mismatches: Fixed connection issues by configuring Neon/Postgres roles and ports consistently.</li>
                         <li>SPA routing on Vercel: Handled /dashboard refresh 404s with fallback rewrites.</li>
                         <li>Frontend/backend integration: Used environment variables for seamless local vs production API switching.</li>
@@ -111,7 +111,7 @@ function page() {
 
                 <div className='mt-10 flex-col'>
                     <h6 className='font-semibold'>Tech Stack</h6>
-                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-2 space-y-1">
+                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-1 space-y-1">
                         <li>Frontend: React, Vite, TypeScript, TailwindCSS, React Query</li>
                         <li>Backend: .NET 9 (C#), EF Core, PostgreSQL</li>
                         <li>DevOps: Fly.io, Vercel, Docker, Neon (DB hosting)</li>

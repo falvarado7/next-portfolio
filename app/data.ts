@@ -33,17 +33,6 @@ export const EXPERIENCES: experience[] = [
     ],
   },
   {
-    id: 'thinkful',
-    company: "Thinkful",
-    role: "Full-Stack Software Engineer",
-    dates: "June 2023 - March 2024",
-    bullets: [
-        "Completed an intensive full-stack program focused on JavaScript, React, Node.js, Express.js, and PostgreSQL.",
-        "Built and developed multiple projects, including CRUD apps and lookup tools.",
-        "Strengthened foundation in both front-end and back-end development with emphasis on clean, maintainable code."
-    ]
-  },
-  {
     id: "rus industrial",
     company: "RUS Industrial",
     role: "Pipe Welder",

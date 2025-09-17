@@ -28,19 +28,19 @@ function page() {
                 ]}/>
                 <div className='mt-10 flex-col'>
                     <h6 className='font-semibold'>Key Features</h6>
-                    <p className='text-zinc-700 dark:text-slate-300 mt-1'>
+                    <p className='text-zinc-700 dark:text-slate-300 mt-1 font-semibold'>
                         AI-Powered Trading Dashboard
                     </p>
-                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-2">
+                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 space-y-1">
                         <li>Real-time market data visualizations with D3.js.</li>
                         <li>Integrated AI assistant to guide new investors.</li>
                         <li>Secure authentication with role-based access.</li>
                         <li>Responsive design optimized for both desktop and mobile.</li>
                     </ul>
-                    <p className='text-zinc-700 dark:text-slate-300 mt-1'>
+                    <p className='text-zinc-700 dark:text-slate-300 mt-2 font-semibold'>
                         Team Collaboration
                     </p>
-                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-2">
+                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 space-y-1">
                         <li>Designed and built in one week with a 4-person team.</li>
                         <li>Focused on clean UX to ensure usability under time pressure.</li>
                         <li>Split responsibilities across frontend, backend, and data integrations.</li>
@@ -60,7 +60,7 @@ function page() {
                         Most trading apps are overwhelming for beginners, while AI tools often feel disconnected from real data.
                         Our goal was to build a platform that:
                     </p>
-                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-2 space-y-1">
+                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-1 space-y-1">
                         <li>Simplifies investing for users with no prior trading experience.</li>
                         <li>Provides real-time financial data in an intuitive dashboard.</li>
                         <li>Leverages AI to give actionable insights in plain language.</li>
@@ -70,22 +70,22 @@ function page() {
 
                 <div className='mt-10 flex-col'>
                     <h6 className='font-semibold'>The Solutions</h6>
-                    <p className='text-zinc-700 dark:text-slate-300 mt-1'>Frontend</p>
-                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-2">
+                    <p className='text-zinc-700 dark:text-slate-300 mt-1 font-semibold'>Frontend</p>
+                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 space-y-1">
                         <li>React + TailwindCSS for rapid UI development.</li>
                         <li>D3.js for interactive and animated stock/portfolio graphs.</li>
                         <li>Mobile-first approach.</li>
                     </ul>
 
-                    <p className='text-zinc-700 dark:text-slate-300 mt-1'>Backend</p>
-                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-2">
+                    <p className='text-zinc-700 dark:text-slate-300 mt-2 font-semibold'>Backend</p>
+                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300">
                         <li>Node.js (Express) API serving user, trading, and AI endpoints.</li>
                         <li>PostgreSQL database with schema for users, trades, and history.</li>
                         <li>Integrated external market data API for live updates.</li>
                     </ul>
 
-                    <p className='text-zinc-700 dark:text-slate-300 mt-1'>Deployment</p>
-                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-2">
+                    <p className='text-zinc-700 dark:text-slate-300 mt-2 font-semibold'>Deployment</p>
+                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 space-y-1">
                         <li>Frontend deployed on Netlify for speed and reliability.</li>
                         <li>Backend hosted on Render for quick hackathon setup.</li>
                         <li>Collaborative GitHub workflow with feature branches and PRs.</li>
@@ -94,7 +94,7 @@ function page() {
 
                 <div className='mt-10 flex-col'>
                     <h5 className='font-semibold'>Lessons Learned</h5>
-                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-2 space-y-1">
+                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-1 space-y-1">
                         <li>Importance of balancing features vs. time constraints in a hackathon.</li>
                         <li>Data visualization libraries like D3.js have a steep learning curve but add huge impact.</li>
                         <li>Clear role delegation allowed us to finish on time and win 1st place.</li>
@@ -104,7 +104,7 @@ function page() {
 
                 <div className='mt-10 flex-col'>
                     <h6 className='font-semibold'>Tech Stack</h6>
-                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-2 space-y-1">
+                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-1 space-y-1">
                         <li>Frontend: React, TailwindCSS, D3.js</li>
                         <li>Backend: Node.js (Express), MongoDB</li>
                         <li>AI: OpenAI API integration for trading insights</li>

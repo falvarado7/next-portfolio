@@ -22,7 +22,7 @@ function page() {
                     Table Time is a full-stack web application I designed and built to modernize the
                     restaurant reservation process. The platform allows restaurant hosts to:
                 </p>
-                <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300">
+                <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 space-y-1">
                     <li>
                         Manage reservations with real-time availability.
                     </li>
@@ -46,10 +46,10 @@ function page() {
 
                 <div className='mt-10 flex-col'>
                     <h6 className='font-semibold'>Key Features</h6>
-                    <p className='text-zinc-700 dark:text-slate-300 mt-1'>
+                    <p className='text-zinc-700 dark:text-slate-300 mt-1 font-semibold'>
                         Modern Reservation Dashboard
                     </p>
-                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-2">
+                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 space-y-1">
                         <li>
                             Displays reservations by day (prev/today/next navigation).
                         </li>
@@ -63,10 +63,10 @@ function page() {
                             User avatars with randomized colors for visual differentiation.
                         </li>
                     </ul>
-                    <p className='text-zinc-700 dark:text-slate-300 mt-1'>
+                    <p className='text-zinc-700 dark:text-slate-300 mt-2 font-semibold'>
                         Smart Table Management
                     </p>
-                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-2">
+                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 space-y-1">
                         <li>
                             Each table shows: image, capacity, and status (Free/Occupied).
                         </li>
@@ -77,27 +77,19 @@ function page() {
                             Future-proof: added image_url column so restaurants can upload their own visuals.
                         </li>
                     </ul>
-                    <p className='text-zinc-700 dark:text-slate-300 mt-1'>
+                    <p className='text-zinc-700 dark:text-slate-300 mt-2 font-semibold'>
                         Stunning UI & UX
                     </p>
-                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-2">
-                        <li>
-                            Glassmorphism + gradient backgrounds.
-                        </li>
-                        <li>
-                            Dark/light mode with a persistent toggle.
-                        </li>
-                        <li>
-                            Scroll-friendly reservation cards (clean design, not cluttered).
-                        </li>
-                        <li>
-                            Mobile-first responsive navbar with collapsible layout.
-                        </li>
+                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 space-y-1">
+                        <li>Glassmorphism + gradient backgrounds.</li>
+                        <li>Dark/light mode with a persistent toggle.</li>
+                        <li>Scroll-friendly reservation cards (clean design, not cluttered).</li>
+                        <li>Mobile-first responsive navbar with collapsible layout.</li>
                     </ul>
-                    <p className='text-zinc-700 dark:text-slate-300 mt-1'>
+                    <p className='text-zinc-700 dark:text-slate-300 mt-2 font-semibold'>
                         Scalable Infrastructure
                     </p>
-                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-2">
+                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 space-y-1">
                         <li>
                             Fly.io backend with CORS policies for secure cross-origin requests.
                         </li>
@@ -124,9 +116,9 @@ function page() {
                     <h5 className='font-semibold'>The Challenge</h5>
                     <p className='text-zinc-700 dark:text-slate-300 mt-1'>
                         Many restaurant reservation apps exist, but most are either mockups or frontend-only demos.
-                        I wanted to create a **production-ready system** that:
+                        I wanted to create a &quot;production-ready system&quot; that:
                     </p>
-                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-2 space-y-1">
+                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-1 space-y-1">
                         <li>Supports real database persistence in the cloud.</li>
                         <li>Lets staff manage tables, reservations, and seating in real-time.</li>
                         <li>Has a modern, responsive UI with light/dark mode for daily usability.</li>
@@ -143,29 +135,29 @@ function page() {
 
                 <div className='mt-10 flex-col'>
                     <h6 className='font-semibold'>The Solutions</h6>
-                    <p className='text-zinc-700 dark:text-slate-300 mt-1'>
+                    <p className='text-zinc-700 dark:text-slate-300 mt-1 font-semibold'>
                         Frontend
                     </p>
-                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-2 space-y-1">
+                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 space-y-1">
                         <li>React + Vite + TypeScript for fast, type-safe UI development.</li>
                         <li>TailwindCSS v3 with custom dark mode + gradient backgrounds.</li>
                         <li>Lucide icons + Unsplash imagery for a modern, polished design.</li>
                         <li>React Query for caching and syncing reservations/tables with API.</li>
                         <li>Responsive nav and cards, optimized for mobile/tablet use.</li>
                     </ul>
-                    <p className='text-zinc-700 dark:text-slate-300 mt-1'>
+                    <p className='text-zinc-700 dark:text-slate-300 mt-2 font-semibold'>
                         Backend
                     </p>
-                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-2 space-y-1">
+                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 space-y-1">
                         <li>Express.js with modular routers for reservations and tables.</li>
                         <li>Knex.js migrations and seeds for database schema and sample data.</li>
                         <li>Business rules enforced (e.g., no Tuesday bookings, valid time ranges, seating capacity checks).</li>
                         <li>PostgreSQL via Neon for cloud persistence.</li>
                     </ul>
-                    <p className='text-zinc-700 dark:text-slate-300 mt-1'>
+                    <p className='text-zinc-700 dark:text-slate-300 mt-2 font-semibold'>
                         Deployment
                     </p>
-                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-2 space-y-1">
+                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 space-y-1">
                         <li>Backend deployed on Fly.io (Dockerized, SSL, CORS config).</li>
                         <li>Frontend deployed on Vercel, pulling API base URL from environment variables.</li>
                         <li>Neon PostgreSQL as managed database with persistent storage.</li>
@@ -181,7 +173,7 @@ function page() {
 
                 <div className='mt-10 flex-col'>
                     <h6 className='font-semibold'>Lessons Learned</h6>
-                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-2 space-y-1">
+                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-1 space-y-1">
                         <li>Deployment pipelines: migrations must be run manually on Fly.io after deploy.</li>
                         <li>CORS setup: production domain must be explicitly whitelisted.</li>
                         <li>SPA routing: Vercel requires rewrite rules to prevent 404s on refresh.</li>
@@ -196,7 +188,7 @@ function page() {
 
                 <div className='mt-10 flex-col'>
                     <h6 className='font-semibold'>Tech Stack</h6>
-                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-2 space-y-1">
+                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-1 space-y-1">
                         <li>Frontend: React, Vite, TypeScript, TailwindCSS, React Query</li>
                         <li>Backend: Node.js, Express, Knex.js, PostgreSQL</li>
                         <li>Database: Neon (Postgres hosting)</li>

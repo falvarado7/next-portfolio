@@ -34,7 +34,7 @@ function page() {
 
                 <div className='mt-10 flex-col'>
                     <h6 className='font-semibold'>My Contribution</h6>
-                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-2 space-y-2">
+                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-1 space-y-2">
                         <li>
                             <span className="font-medium">TestTrak Migration:</span> Transitioned TestTrak from a local Windows app
                             to a modern React + Laravel web module with InertiaJS, enabling global cloud access.
