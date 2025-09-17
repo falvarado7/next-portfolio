@@ -71,7 +71,7 @@ export const PROJECTS: projects[] = [
         id: "anoplex",
         title: "Anoplex Software",
         description: "Modernized legacy systems into scalable React/Laravel web app used by 150+ global clients",
-        tech: ["React", "Laravel", "MySQL"],
+        tech: ["React", "Laravel", "MySQL", "Inertia", "Victory Charts"],
         link: "https://hackathon-team2-v2-1.onrender.com/",
         image: anoplexImg
     },
@@ -86,18 +86,18 @@ export const PROJECTS: projects[] = [
     },
     {
         id: "restaurant-reservation",
-        title: "Restaurant Reservation",
+        title: "Table Time",
         description: "Reservation management system for restaurants with seating, scheduling, and guest tracking",
-        tech: ["React", "Node.js (Express.js)", "PostgreSQL"],
-        link: "https://restaurant-reservation-project-1.onrender.com",
-        github: "https://github.com/falvarado7/Restaurant-Reservation-Project",
-        image: "/Restaurant-reservation.PNG"
+        tech: ["React", "Node.js (Express.js)", "PostgreSQL", "Knex.js"],
+        link: "https://table-time-vert.vercel.app/",
+        github: "https://github.com/falvarado7/restaurant-reservation",
+        image: "/table-time/TableTime-home-light.png"
     },
     {
         id: "we-love-movies",
         title: "We Love Movies",
         description: "Movie discovery platform with CRUD functionality for films, reviews, and theaters",
-        tech: ["React", "Python (FastAPI)", "Docker"],
+        tech: ["React", "Python (FastAPI)", "Docker", "PostgreSQL"],
         link: "https://welovemovies-frontend.netlify.app/",
         github: "https://github.com/falvarado7/movie-app",
         image: "/we-love-movies/WeLoveMovies.png"

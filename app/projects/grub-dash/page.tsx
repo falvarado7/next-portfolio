@@ -88,7 +88,7 @@ function page() {
                         screenshots={[
                             { src: "/grubdash/Cart-Light.png", alt: "Cart light mode" },
                             { src: "/grubdash/Dashboard-dark.png", alt: "Dark mode dashboard" },
-                            { src: "/grubdash/EditOrder-Light.png", alt: "Light mode edir order" },
+                            { src: "/grubdash/EditOrder-Light.png", alt: "Light mode edit order" },
                         ]}
                     />
                 </div>
@@ -136,10 +136,10 @@ function page() {
                     </p>
                     <p className='text-zinc-700 dark:text-slate-300 mt-1 flex items-center'>
                         <FaLink className='mr-2'/>
-                        Backend: <a href='https://grubdash-api.fly.dev/dishes'
+                        Backend: <a href='https://grubdash-api.fly.dev/health'
                                     className='underline ml-1 hover:text-blue-600 dark:hover:text-blue-500'
                                     target='_blank'>
-                                    grubdash-api.fly.dev/dishes
+                                    grubdash-api.fly.dev/health
                                 </a>
                     </p>
                 </div>
