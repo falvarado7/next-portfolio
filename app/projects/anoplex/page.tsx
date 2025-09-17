@@ -1,10 +1,8 @@
 import React from 'react'
-import Image from 'next/image'
-import { FaCircleInfo } from "react-icons/fa6";
-import Footer from '@/app/components/Footer';
-import Link from 'next/link';
-import { RiArrowGoBackFill } from 'react-icons/ri';
-import FadeInItem from '@/app/components/FadeInItem';
+import { RiArrowGoBackFill } from 'react-icons/ri'
+import FadeInItem from '@/app/components/FadeInItem'
+import { FaCircleInfo, FaLink, FaRegFolderOpen } from 'react-icons/fa6'
+import ScreenshotGallery from '@/app/components/ScreenshotGallery'
 
 function page() {
 
@@ -25,24 +23,6 @@ function page() {
                     Which are used by over 150+ customers around the world in over 6 different countries for
                     metal finishing. Here are some of the standout projects and features I&apos;ve contributed to.
                 </p>
-                <div className='flex'>
-                    <Image
-                        src="/IMG_5223.JPG"
-                        alt='francisco img'
-                        width={70}
-                        height={30}
-                        className='rounded-full mr-2'
-                    />
-                    <div className='flex flex-col'>
-                    Francisco
-                    <div className='flex space-x-3 text-zinc-700 dark:text-slate-300'>
-                        <p className=''>June 2024 - Present</p>
-                        <a href='https://anoplex.com' target="_blank" className='underline'>
-                            Visit Project
-                        </a>
-                    </div>
-                    </div>
-                </div>
 
                 <div className='border border-zinc-700 rounded-md p-4 flex mt-14 text-zinc-700 md:w[500px] xs:w-[300px] mx-auto'>
                     <FaCircleInfo className='mr-2 size-20 pb-14 '/>
@@ -53,6 +33,30 @@ function page() {
                 </div>
 
                 <div className='mt-10 flex-col'>
+                    <h6 className='font-semibold'>My Contribution</h6>
+                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-2 space-y-2">
+                        <li>
+                            <span className="font-medium">TestTrak Migration:</span> Transitioned TestTrak from a local Windows app
+                            to a modern React + Laravel web module with InertiaJS, enabling global cloud access.
+                        </li>
+                        <li>
+                            <span className="font-medium">ChemTrak Screen Module:</span> Built a visual dashboard for labs to monitor
+                            tank status, test schedules, and compliance with red/yellow/green indicators,
+                            including out-of-spec warnings and offline tank detection.
+                        </li>
+                        <li>
+                            <span className="font-medium">JobTrak FAIR Module:</span> Extended JobTrak (Anoplex’s job management system for
+                            scheduling, routing, and QA) with a <em>First Accident Incident Report</em> workflow,
+                            helping companies track safety events alongside production jobs.
+                        </li>
+                        <li>
+                            <span className="font-medium">Advanced Reporting:</span> Designed and implemented multiple PDF and CSV exports
+                            across ChemTrak and JobTrak, simplifying data handling, audits, and client communication.
+                        </li>
+                    </ul>
+                </div>
+
+                <div className='mt-10 flex-col'>
                     <h6 className='font-semibold'>About Anoplex</h6>
                     <p className='text-zinc-700 dark:text-slate-300 mt-1'>
                         Anoplex software is a web-based solution specifically designed for metal finishing companies.
@@ -60,13 +64,9 @@ function page() {
                         quality assurance. The software is cloud-based, making it accessible from any modern browser,
                         and is used by companies globally across various time zones.
                     </p>
-                    <Image
-                        src='/anoplex-testing.jpg'
-                        height={200}
-                        width={350}
-                        alt='Anoplex'
-                        className='rounded-lg mt-10'
-                    />
+                    <ScreenshotGallery screenshots={[
+                        {src: '/anoplex/anoplex-testing.jpg', alt: 'Anoplex'}
+                    ]}/>
                 </div>
 
                 <div className='mt-10 flex-col'>
@@ -78,13 +78,9 @@ function page() {
                         for both on-site and remote management. Anoplex is particularly popular in industries that require
                         precise process control and regulatory compliance, such as aerospace and manufacturing
                     </p>
-                    <Image
-                        src='/anoplex-software.jpg'
-                        height={200}
-                        width={350}
-                        alt='Anoplex'
-                        className='rounded-lg mt-10'
-                    />
+                    <ScreenshotGallery screenshots={[
+                        {src: '/anoplex/anoplex-software.jpg', alt: 'Monarch'}
+                    ]}/>
                 </div>
 
                 <div className='mt-10 flex-col'>
@@ -98,23 +94,50 @@ function page() {
                         alerting users when it&apos;s time to unload chambers. It supports up to four chambers and allows for
                         the customization of specifications for different chamber types.
                     <br/>
-                    <br/>
                         TestTrak also makes the audit process more manageable by keeping all relevant documentation in one
                         place, ensuring that companies are well-prepared for standards like Nadcap
                     </p>
                 </div>
 
                 <div className='mt-10 flex-col'>
-                    <h6 className='font-semibold'>My Contribution</h6>
+                    <h6 className='font-semibold'>About JobTrak</h6>
                     <p className='text-zinc-700 dark:text-slate-300 mt-1'>
-                        The TestTrak program, initially available solely as a local Windows download, has undergone a
-                        transformative upgrade under my guidance. My mission was to seamlessly transition TestTrak to Anoplex&apos;s
-                        robust cloud based system, ensuring that users can access it effortlessly from any device, anywhere with
-                        an internet connection. To achieve this, I employed ReactJS to create a dynamic and responsive frontend,
-                        while harnessing the power of Laravel for a secure and efficient backend. To bridge these two technology
-                        stacks, I utilized InertiaJS, which facilitated smooth communication and interaction between them. This
-                        innovative integration not only enhances user experience but also paves the way for future updates and scalability,
-                        aligning with Anoplex&apos;s vision of accessible and cutting edge software solutions.
+                        JobTrak is Anoplex&apos;s production and job management system. It helps manufacturers
+                        track work orders, manage part routing through plating and finishing processes,
+                        enforce quality checks, and maintain traceability for compliance.
+                        It is widely used in aerospace and defense supply chains where accountability is critical.
+                    </p>
+                </div>
+
+                <div className='mt-10 flex-col'>
+                    <h6 className='font-semibold'>Lessons Learned</h6>
+                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-2 space-y-1">
+                        <li>Built reusable patterns for new modules that sped up later feature delivery.</li>
+                        <li>Gained experience designing software for industries with strict audit requirements (Nadcap, FAA, ITAR).</li>
+                        <li>Learned the importance of visual clarity in lab dashboards, small design choices (color coding, icons) improved adoption significantly.</li>
+                    </ul>
+                </div>
+
+                <div className='mt-10 flex-col'>
+                    <h6 className='font-semibold'>Tech Stack</h6>
+                    <ul className="list-disc list-inside text-zinc-700 dark:text-slate-300 mt-2 space-y-1">
+                        <li>Frontend: React, TailwindCSS, InertiaJS</li>
+                        <li>Backend: Laravel (PHP), SQL</li>
+                        <li>Database: MySQL</li>
+                        <li>Deployment: Cloud-based Anoplex system</li>
+                    </ul>
+                </div>
+
+                <div className='mt-10 flex-col'>
+                    <h6 className='font-semibold'>Live Site</h6>
+                    <p className='text-zinc-700 dark:text-slate-300 mt-1 flex items-center'>
+                        <FaLink className='mr-2'/>
+                        Anoplex Website:
+                        <a href='https://anoplex.com/'
+                            className='underline ml-1 hover:text-blue-600 dark:hover:text-blue-500'
+                            target='_blank'>
+                            anoplex.com
+                        </a>
                     </p>
                 </div>
             </div>

@@ -1,4 +1,3 @@
-import anoplexImg from "@/public/anoplex-software.jpg";
 import { StaticImageData } from "next/image";
 
 export type experience = {
@@ -72,8 +71,8 @@ export const PROJECTS: projects[] = [
         title: "Anoplex Software",
         description: "Modernized legacy systems into scalable React/Laravel web app used by 150+ global clients",
         tech: ["React", "Laravel", "MySQL", "Inertia", "Victory Charts"],
-        link: "https://hackathon-team2-v2-1.onrender.com/",
-        image: anoplexImg
+        link: "https://anoplex.com/",
+        image: "/anoplex/anoplex-testing.jpg"
     },
     {
         id: "monarch",
@@ -82,7 +81,7 @@ export const PROJECTS: projects[] = [
         tech: ["React", "Node.js (Express.js)", "MongoDB", "D3.js"],
         link: "https://hackathon-team2-v2-1.onrender.com/",
         github: "https://github.com/falvarado7/Hackathon-Project",
-        image: '/Monarch.PNG'
+        image: '/monarch/Monarch.PNG'
     },
     {
         id: "restaurant-reservation",

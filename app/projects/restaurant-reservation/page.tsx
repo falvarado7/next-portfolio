@@ -17,7 +17,7 @@ function page() {
                     </a>
                 </div>
 
-                <h1 className='mt-16 my-0.5 text-3xl font-bold'>Table Time</h1>
+                <h1 className='mt-5 sm:mt-16 my-0.5 text-3xl font-bold'>Table Time</h1>
                 <p className='mt-5 mb-1 text-zinc-700 dark:text-slate-300'>
                     Table Time is a full-stack web application I designed and built to modernize the
                     restaurant reservation process. The platform allows restaurant hosts to:

@@ -16,7 +16,7 @@ function page() {
                         <RiArrowGoBackFill className='border rounded-full size-6 p-1 hover:text-blue-500 hover:border-blue-500'/>
                     </a>
                 </div>
-                <h1 className='mt-16 my-0.5 text-3xl font-bold'>GrubDash</h1>
+                <h1 className='mt-5 sm:mt-16 my-0.5 text-3xl font-bold'>GrubDash</h1>
                 <p className='my-5 text-zinc-700 dark:text-slate-300'>
                     GrubDash is a full-stack web application for browsing dishes, placing orders, and managing menus.
                     I designed and developed it from scratch to demonstrate a production-ready SaaS workflow,

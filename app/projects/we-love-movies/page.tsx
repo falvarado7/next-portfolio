@@ -16,7 +16,7 @@ function page() {
                         <RiArrowGoBackFill className='border rounded-full size-6 p-1 hover:text-blue-500 hover:border-blue-500'/>
                     </a>
                 </div>
-                <h1 className='mt-16 my-0.5 text-3xl font-bold'>We Love Movies</h1>
+                <h1 className='mt-5 sm:mt-16 my-0.5 text-3xl font-bold'>We Love Movies</h1>
                 <p className='my-5 text-zinc-700 dark:text-slate-300'>
                     We Love Movies is a full-stack web application where users can browse movies,
                     find nearby theaters, and leave reviews. The project demonstrates my ability to
